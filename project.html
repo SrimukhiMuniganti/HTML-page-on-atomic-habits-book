@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web page</title>
+    <style>
+        body {
+            background-color: rgb(35, 26, 3);
+            margin-top: 140px;
+        }
+        button{
+            background-color:blue;
+            color:white;
+            padding:10px 20px;
+            border:none;
+
+        }
+       
+
+
+        .bestseller-tag {
+            
+            font-size: 25px;
+            
+            color: rgb(212, 211, 188);
+            text-align: center;
+           
+            
+        }
+        
+
+        .title-atomic {
+            color: whitesmoke;
+            text-align: center;
+            font-size: 75px;
+            font-family: georgia;
+            margin-bottom: 0px;
+        }
+
+        .title-habits {
+            color: goldenrod;
+            text-align: center;
+            font-size: 70px;
+            font-family: georgia;
+            margin-top: 0px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: antiquewhite;
+            font-size: 30px;
+            margin-top: -25px;
+        }
+
+        .divider-center {
+            width: 100px;
+            height: 3px;
+            background-color: goldenrod;
+            margin: auto;
+            margin-top: 0px;
+        }
+
+        .description {
+            color: antiquewhite;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        nav a {
+            color: rgb(218, 165, 32);
+            margin: 0 15px;
+        }
+        a{
+            color:goldenrod;
+
+        }
+       
+        .section-label {
+            color: goldenrod;
+            text-align: left;
+            margin-left: 250px;
+            margin-top: 150px;
+        }
+
+        .section-heading {
+            font-size: 35px;
+            text-align: left;
+            margin-left: 250px;
+        }
+
+        .heading-white {
+            color: whitesmoke;
+        }
+
+        .heading-gold {
+            color: goldenrod;
+        }
+
+        .section-body {
+            text-align: left;
+            margin-left: 250px;
+            color: rgb(177, 171, 171);
+            max-width: 1000px;
+            font-size: 20px;
+        }
+
+        .divider-left {
+            width: 3px;
+            height: 30px;
+            background-color: goldenrod;
+            margin-top: 0px;
+            margin-left: 250px;
+            
+        }
+
+        .quote {
+            margin-top:25px;
+            text-align: left;
+            color: grey;
+            font-size: 20px;
+        }
+        .blocks{
+            text-align:left;
+            margin-left:250px;
+            color:rgb(231, 168, 33);
+            font-size:50px
+        }
+        
+        .btext{
+            color:rgb(193, 159, 75);
+            font-size:20px;
+            margin-top: -150px;
+        }
+        .boxt{
+            border-collapse: collapse;
+            color:goldenrod;
+            margin-left:250px;
+            margin-right:250px;
+            
+        }
+        th{
+            font-size:15px;
+            padding: 15px 50px;
+            border-bottom:2px solid rgb(121, 99, 46);
+        }
+        td{
+            padding:25px 10px;
+            border-bottom:2px solid rgb(129, 105, 44)
+
+        }
+        td strong { color: var(--text); }
+
+        .lab{
+            color:aliceblue;
+            padding-left:60px;
+            padding-top: 10px;
+        }
+        .conta{
+            display:flex;
+            align-items:center;
+            gap:30px;
+            margin-right: 150px;
+            color:rgb(190, 177, 161);
+            font-size:18px;
+        }
+        .ima{
+            width:500px;
+            margin-left:250px;
+        }
+        .conta2{
+            display:flex;
+            align-items:center;
+            gap:25px;
+            margin-top:60px;
+            margin-left:250px;
+            margin-right:150px ;
+            color:rgb(190, 177, 161);
+            font-size:18px;
+        }
+        .ima2{
+            width:500px;
+        }
+        
+        .video1{
+            display:flex;
+            align-items:center;
+            gap:50px;
+            margin-top:60px;
+            margin-left:250px;
+            margin-right:150px ;
+            color:rgb(190, 177, 161);
+            font-size:18px;
+        }
+        .vid{
+            margin-left:250px;
+        }
+        
+        .audi{
+            margin-left:250px;
+            margin-top:10px;
+            width:1100px;
+            height:80px;
+            border-radius:10px;
+            border:0.5px solid rgb(120, 90, 8);
+            background-color:rgb(39, 36, 41);
+            display:flex;
+
+            
+            justify-content:space-between;
+        
+        }
+        .text{
+            
+            padding-top:30px;
+            padding-left:50px;
+            font-size:20px;
+            color:rgb(219, 208, 183);
+            
+            
+        }
+        .au{
+            padding-top: 15px;
+            
+            display:block;
+            width:350px;
+            margin-left:auto;
+            margin-right:100px;
+            color: rgb(55, 44, 30);
+            filter: invert(0.85) sepia(0.3) hue-rotate(5deg);
+        }
+
+  .libox{
+            margin-left:280px;
+            margin-top:10px;
+            width:200px;
+            height:150px;
+            border-radius:10px;
+            padding:45px;
+            border:0.5px solid rgb(120, 90, 8);
+            background-color:rgb(39, 36, 41);
+            display:grid;
+        animation:bounce 1s infinite ease-in-out;}
+  .libox2{
+            margin-left:280px;
+            margin-top:40px;
+            width:200px;
+            height:150px;
+            border-radius:10px;
+            padding:45px;
+            border:0.5px solid rgb(120, 90, 8);
+            background-color:rgb(39, 36, 41);
+            display:grid;}
+  
+            .libox3{
+            margin-left:620px;
+            margin-top:-520px;
+            width:200px;
+            height:150px;
+            border-radius:10px;
+            padding:45px;
+            border:0.5px solid rgb(120, 90, 8);
+            background-color:rgb(39, 36, 41);
+            display:grid;}
+  
+     .libox4{
+            margin-left:620px;
+            margin-top:40px;
+            width:200px;
+            height:150px;
+            border-radius:10px;
+            padding:45px;
+            border:0.5px solid rgb(120, 90, 8);
+            background-color:rgb(39, 36, 41);
+            display:grid;}
+        .libox5{
+            margin-left:960px;
+            margin-top:-520px;
+            width:200px;
+            height:150px;
+            border-radius:10px;
+            padding:45px;
+            border:0.5px solid rgb(120, 90, 8);
+            background-color:rgb(39, 36, 41);
+            display:grid;}    
+          .libox6{
+            margin-left:960px;
+            margin-top:40px;
+            width:200px;
+            height:150px;
+            border-radius:10px;
+            padding:45px;
+            border:0.5px solid rgb(120, 90, 8);
+            background-color:rgb(39, 36, 41);
+            display:grid;}    
+  
+
+  .link-arrow {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    color: var(--gold);
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-size: 1rem;
+  }
+
+  .a{
+    text-decoration: none;
+  }
+
+  .link-cat {
+    color:goldenrod
+  }
+ .h{
+    color:antiquewhite
+ }
+ .b{
+    color: rgb(163, 160, 155);
+ }
+ .section-body2 {
+            text-align: left;
+            margin-left: 250px;
+            color: rgb(120, 111, 111);
+            max-width: 1000px;
+            font-size: 18px;
+        }
+        
+       .footer-bottom {
+        margin-left:380px;
+    display: flex;
+    
+    align-items: center;
+    padding-top:10px;
+    font-size: 15px;
+    color:rgb(121, 108, 67);
+   
+  }
+
+  .footer-quote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: rgba(212,168,67,0.6);
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+  } 
+ .line{
+   border-color: rgb(58, 47, 18);
+    width:1000px
+
+
+ }
+ footer {
+    background: var(--bg2);
+    border-top: 1px solid var(--border);
+  }
+
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 2rem 2rem;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap:48px;
+    padding-bottom:48px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .footer-brand h2 {
+    margin-left: 100px;
+    font-family: 'Playfair Display', serif;
+    font-size:30px;
+    color:goldenrod;
+    margin-bottom: 13px;
+  }
+
+  .footer-brand p { font-size:15px; color:rgb(109, 102, 92); max-width: 280px;
+margin-left: 100px; }
+
+  .footer-col h4 {
+
+    
+    font-size: 12px;
+    text-transform: uppercase;
+    color:goldenrod;
+    margin-bottom: 1rem;
+  }
+
+  .footer-col ul { list-style: none; }
+
+  .footer-col ul li a {
+    margin-left:-45px;
+    display: block;
+    padding: 5px;
+    font-size:16px;
+    color:rgb(82, 76, 69);
+    text-decoration: none;
+    
+  }
+
+  @media(max-width:600px){
+    .container{
+        flex-direction:colomn;
+    }
+  }
+  
+  
+        
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    
+    <p class="bestseller-tag">#1 NEW YORK TIMES BESTSELLER</p>
+
+    <h1 class="title-atomic">ATOMIC</h1>
+    <h1 class="title-habits">HABITS</h1>
+    <h2 class="subtitle">Tiny Changes, Remarkable Results</h2>
+
+    <div class="divider-center"></div>
+    <br>
+
+    <pre class="description">An easy and proven way to build good habits and break bad ones. James Clear reveals how 
+    small daily improvements compound into extraordinary life transformation.</pre>
+
+    <nav>
+        <a href="#introduction">INTRODUCTION</a>
+        <a href="#4laws">4 LAWS</a>
+        <a href="#concept">CONCEPT</a>
+        <a href="#media">MEDIA</a>
+        <a href="#resources">RESOURCES</a>
+        <a href="#about">ABOUT</a>
+    </nav>
+
+    <section id="introduction">
+        <p class="section-label">INTRODUCTION</p>
+        <p class="section-heading">
+            <span class="heading-white">WHY</span>
+            <span class="heading-gold">TINY</span>
+            <span class="heading-gold">CHANGES</span>
+            <span class="heading-white">MATTER</span>
+        </p>
+        <p class="section-body">
+            Atomic Habits by James Clear is a book about how habits shape our lives. The main idea is: goals are important,
+            but what really matters are the systems you follow every day.
+
+            James Clear studied science—biology, psychology, and the brain—to explain how habits work.
+            He shows that if you improve just a little (1%) each day, those small steps add up to big results. After one year,
+            you'll be 37 times better.
+        </p>
+        <div class="divider-left">
+        <pre class="quote">"You don't rise to the level of your goals. You fall to the level of your systems." — James Clear</pre></div>
+        <p class="section-body">The book introduces the concept of the Habit Loop — a neurological cycle of cue, craving, response, and reward — and then presents a four-step framework (The Four Laws of Behavior Change) to hack that loop in your favor.
+
+Whether you want to build an exercise routine, read more, quit smoking, or become more productive, Atomic Habits gives you the exact tools to make those changes last.</p>
+         
+         <div class="block 1">
+    <p class="blocks">1%
+        <span class="btext">Daily improvement compounded over 365 days = 37× better results</span>
+    </p>
+    <p class="blocks">66
+        <span class="btext">Average days for a new behavior to become automatic (University College London study)</span>
+    </p>
+    <p class="blocks">4 
+        <span class="btext">Core laws that govern every habit you will ever form or break</span>
+    </p>
+    </div>
+    
+    </section>
+    <section id="4laws">
+        <p class="section-label">THE FRAMEWORK</p>
+        <P class="section-heading">
+            <span class="heading-white">THE 4 LAWS OF</span>
+            <span class="heading-gold">BEHAVIOR CHANGE</span>
+        </P>
+        <p class="section-body">Every habit can be built or broken using these four levers. To build a good habit, follow the positive law. To break a bad one, invert it.</p>
+        <div class="boxt">
+          <table>
+           <thead>
+            <tr>
+                <th>LAW</th>
+                <th>STAGE</th>
+                <th>BUILD GOOD HABIT</th>
+                <th>BREAK BAD HABIT</th>
+                <th>REAL-WORLD EXAMPLE</th>
+            </tr>
+         </thead>
+         <br>
+         
+        <tbody>
+            <tr>-
+                <td class="lab">1st</td>
+                <td><span class="lab">cue</span></td>
+                <td class="lab"><strong>Make it obvious-</strong>
+                Design your environment so good habits are visible triggers</td>
+                <td class="lab"><strong>Make it Invisible —</strong>Remove the cue from your environment</td>
+                <td class="lab">Place your gym bag by the door the night before</td>
+             
+            </tr>
+
+            <tr>
+                <td class="lab">2nd</td>
+                <td><span class="lab">Craving</span></td>
+                <td class="lab"><strong>Make it Attractive</strong>— Pair the habit with something you enjoy (temptation bundling)</td>
+                <td class="lab"><strong>Make it Unattractive</strong> — Reframe the mindset around the habit</td>
+                <td class="lab">Only listen to your favourite podcast while running</td>
+            </tr>
+            <tr>
+                <td class="lab">3rd</td>
+                <td><span class="lab">Response</span></td>
+                <td class="lab"><strong>Make it Easy </strong> — Reduce friction; use the 2-minute rule to start</td>
+                <td class="lab"><strong>Make it Difficult </strong>  — Add friction so it's harder to do</td>
+                <td class="lab">Set up your workout clothes the night before</td>
+            </tr>
+            
+            <tr>
+                <td class="lab">4th</td>
+                <td><span class="lab">Reward</span></td>
+                <td class="lab"><strong>Make it Satisfying</strong>— Reward yourself immediately after completing the habit</td>
+                <td class="lab"><strong>Make it Unattractive</strong>  — Create a habit contract with accountability</td>
+                <td class="lab">Track your streak on a habit calendar</td>
+            </tr>
+        </tbody>
+        
+        </table>
+    
+    </div>
+    </section>
+    <section id="concept">
+        <p class="section-label">CORE CONCEPTS</p>
+        <P class="section-heading">
+            <span class="heading-white">KEY IDEAS</span>
+            <span class="heading-gold">VISUALISED</span></P>
+    <div class="conta">
+    <img class="ima" src="/1r.png"alt="picture">
+    <div><p><strong>The 1% Rule — Compound Growth:</strong>
+Habits are the compound interest of self-improvement. Small, consistent 1% gains seem insignificant daily,
+ but their cumulative effect over months and years is staggering. 1.01³⁶⁵ = 37.78. Miss one day and it's fine 
+ — but 0.99³⁶⁵ = 0.03. Consistency is everything in compounding.</p>
+    </div>
+</div>
+    <div class="conta2">
+        <div><p><strong>Habit Stacking — The Power of Linking:</strong>The formula: "After I [CURRENT HABIT], 
+I will [NEW HABIT]."Stacking anchors a new behaviour to an existing one, 
+using established neural pathways.This is one of the most powerful tools in the book 
+— no willpower required,just clever sequencing.</p></div>
+            <img class="ima2" src="/hs.png"alt="pic"></div>
+ <div class="conta">
+    <img class="ima" src="/ed.png"alt="picture">
+    <div><p><strong>Environment Design — Spaces Shape Behaviour:</strong>
+Clear argues we don't avoid bad habits through willpower — we design environments that make them invisible.
+ Put fruit on the counter, not chips. Keep your book on the pillow, not the phone.
+ Every context becomes a cue. Build spaces that work for you automatically.</p>
+    </div>
+</div>   
+        
+<div class="conta2">
+        <div><p><strong>Identity-Based Habits — Become the Person:</strong>Most people set outcome-based goals: "I want to run a marathon." Clear flips this.
+             Start with identity: "I am a runner." Every time you lace up your shoes, you cast a vote for that identity. Two people refuse a cigarette — one says "I'm trying to quit,"
+             the other says "I don't smoke." The difference is profound.</p></div>
+            <img class="ima2" src="/ib.png"alt="pic"></div>
+    
+    </section>
+    <section id="media">
+        <p class="section-label">VIDEO AND AUDIO</p>
+        <P class="section-heading">
+            <span class="heading-white">WATCH AND</span>
+            <span class="heading-gold">LISTEN</span></P>
+        <p class="section-body">Watch James Clear explain the core concepts of Atomic Habits in his own words,
+             plus a summary animation to cement your understanding.</p>
+        <div class="video1">
+        <div><p><strong>Animated Book Summary:</strong>This animated summary condenses Atomic Habits into a visual explainer —
+             perfect for revisiting the key concepts after your first read, 
+            or for sharing with someone who hasn't picked up the book yet..</p></div>
+            <iframe width="1300px" height="250px"  src="https://www.youtube.com/embed/1gdkBt9it84?si=af8vxY8mIMJAIN_J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>     
+        
+            <div class="conta">
+    <iframe class="vid" width="1300px" height="250px" src="https://www.youtube.com/embed/U_nzqnXWvSo?si=Po4bWSR9Kf8w_qJF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div><p><strong>James Clear — TED-style Talk:</strong>
+In this talk, James Clear breaks down the science of habit formation,
+ explaining why small decisions compound into life-changing outcomes and how the Four
+  Laws can transform any behaviour.</p>
+  </div>
+  </div>
+  <br>
+  <br>
+  <div>
+    
+     <P class="section-heading">
+            <span class="heading-gold">LISTEN</span></P>
+    
+    <div class="audi"><strong class="text">WHY TO READ ATOMIC HABITS: </strong>
+<audio controls class="au">
+    <source src="audio1.mp3" type="audio/mpeg">
+  </audio>
+    </div>
+    <div>
+       
+    
+    <div class="audi"><strong class="text">HOW TO BECOME 37.78 BETTER THAN OTHERS : </strong>
+<audio controls class="au">
+    <source src="audio2.mp3" type="audio/mpeg">
+  </audio> 
+    </div>
+     <div class="audi"><strong class="text">HOW TO BECOME 37.78 BETTER THAN OTHERS : </strong>
+<audio controls class="au">
+    <source src="audio3.mp3" type="audio/mpeg">
+  </audio> 
+    </div>
+    
+    </div>
+    </section>
+    <section>
+        <section id="resources"></section>
+        <p class="section-label">RESOURCES</p>
+        <P class="section-heading">
+            <span class="heading-white">USEFUL</span>
+            <span class="heading-gold">LINKS</span></P>
+            <section id="resources">
+  
+  <p  class="section-body">Everything you need to go deeper — official resources, habit trackers, podcasts, and scientific reading.</p>
+<div class="libox"><a href="https://jamesclear.com">
+        <span class="link-arrow">↗</span>
+        <div class="link-cat">Official</div>
+        <h3 class="h">JamesClear.com</h3>
+        <p class="b">The author's official website with free articles, a weekly newsletter, and bonus habit resources.</p>
+      </a>
+      </div>
+      
+      
+<div class="libox2"><a href="https://www.amazon.com/dp/0735211299">
+        <span class="link-arrow">↗</span>
+        <div class="link-cat">Purchase</div>
+        <h3 class="h">Buy the Book</h3>
+        <p class="b">Get Atomic Habits in hardcover, paperback, Kindle, or audiobook format on Amazon.</p>
+      </a>
+
+   
+</div>
+<div class="libox3"><a href="https://www.youtube.com/@JamesClear">
+        <span class="link-arrow">↗</span>
+        <div class="link-cat">Video</div>
+        <h3 class="h">YouTube Channel</h3>
+        <p class="b">James Clear's official YouTube channel with talks, interviews, and habit science videos.</p>
+      </a>
+
+   
+</div>
+<div class="libox4"><a href="https://www.ted.com/talks">
+        <span class="link-arrow">↗</span>
+        <div class="link-cat">Talks</div>
+        <h3 class="h">TED Talks on Habits</h3>
+        <p class="b">Curated TED Talks on willpower, behaviour change, and the neuroscience of habits.</p>
+      </a>
+
+   
+</div>
+<div class="libox5"><a href="https://www.hubermanlab.com">
+        <span class="link-arrow">↗</span>
+        <div class="link-cat">Podcast</div>
+        <h3 class="h">Huberman Lab Podcast</h3>
+        <p class="b">Andrew Huberman's neuroscience podcast covers the biology behind habits, dopamine, and behaviour change.</p>
+      </a>
+
+   
+</div>
+<div class="libox6"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3505409/">
+        <span class="link-arrow">↗</span>
+        <div class="link-cat">Science</div>
+        <h3 class="h">Habit Formation Research</h3>
+        <p class="b">The UCL study on how long habits actually take to form — the science behind Clear's 66-day estimate.</p>
+      </a>
+
+   
+</div>
+</div>
+  
+    </section>
+    <br>
+    <br>
+    <br>
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h2>Atomic Habits</h2>
+        <p>An educational guide to the ideas of James Clear. Built to help readers understand, apply, and share the principles of Atomic Habits in their daily lives.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#4laws">Four Laws</a></li>
+          <li><a href="#concept">Core Concepts</a></li>
+          <li><a href="#media">Video</a></li>
+          <li><a href="#resources">Audio</a></li>
+          <li><a href="#about">Resources</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Key Concepts</h4>
+        <ul>
+          <li><a href="#4laws">Habit Loop</a></li>
+          <li><a href="#concet">1% Rule</a></li>
+          <li><a href="#concept">Habit Stacking</a></li>
+          <li><a href="#concept">Identity-Based</a></li>
+          <li><a href="#concept">Environment Design</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="footer-quote">
+      "Every action you take is a vote for the type of person you wish to become."
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Atomic Habits Guide · For Educational Purposes</span>
+     
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>
